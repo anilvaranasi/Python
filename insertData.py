@@ -14,5 +14,5 @@ con.cursor().execute("USE DATABASE IDRREPORTS")
 con.cursor().execute("USE SCHEMA PUBLIC")
 con.cursor().execute(
         "INSERT INTO ACCOUNTS(LAB, NAME) VALUES " + 
-        "    ('labx3', 'accountx1'), " + 
-        "    ('labx4', 'accountx2')")
+        "    ('labx5', 'accountx1'), " + 
+        "    ('labx6', 'accountx2')")
