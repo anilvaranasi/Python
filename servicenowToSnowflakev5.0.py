@@ -6,11 +6,13 @@ import json
 def buildUrl (instanceName, api, table, query, limit):
     url = 'https://'+ instanceName + '.service-now.com' + api + table + "?" + "sysparm_query=" + query + "&sysparm_limit=" + limit
     return url
+JSONData='{"sourceTable":"incident","query":"active=true","stColumnList":"number|category|subcategory|short_description","targetTable":"tableName","ttColumnList":"NUMBER, CATEGORY, SUBCATEGORY, SHORTDESC"}'
+storedata = json.loads(JSONData)
 
 def makeRESTCall(url,username,password):
     # Set proper headers
     headers = {"Content-Type":"application/json","Accept":"application/json"}
-    #print (url + " " + username + " " + password)
+    print (url + " " + username + " " + password)
     # Do the HTTP request
     response = requests.get(url, auth=(user, pwd), headers=headers )
     # Check for HTTP codes other than 200
