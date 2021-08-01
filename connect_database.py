@@ -1,3 +1,5 @@
+#Location of database https://astra.datastax.com/org/e3643ed3-6da6-4252-9d37-1b22eea7d708/database/66964d1a-482d-4b55-a552-a50a2a148924/connect
+#Location of key   https://astra.datastax.com/org/e3643ed3-6da6-4252-9d37-1b22eea7d708/settings/tokens
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
