@@ -25,7 +25,7 @@ def readServiceNowData(url,username,password):
     return responseJSON
 # Set the request parameters
 #url = 'https://dev63486.service-now.com/api/now/table/incident?sysparm_limit=10'
-instanceName = 'dev63486'
+instanceName = 'dev99016'
 api = '/api/now/table/'
 table = 'incident'
 #query = 'active%3Dtrue%5Estate%3D2'
@@ -36,7 +36,7 @@ url = buildUrl(instanceName,api,table,query,limit)
 
 # Eg. User name="admin", Password="admin" for this code sample.
 user = 'admin'
-pwd = 'Abcd123$'
+pwd = 'Abcd1234%'
 
 responseJSON = readServiceNowData(url,user,pwd)
 for item in responseJSON:
