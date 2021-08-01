@@ -1,0 +1,8 @@
+AstraCS:wJlosGCAeWYGLyZBUIlYEKcv:0f5e31f39e983405be7fcb8c1102fad0f9846e471748531b54ee9e7a9c77fae8
+
+
+c:\python\python.exe c:\python\lib\site-packages\pip install requests
+
+c:\python\python.exe c:\python\lib\site-packages\pip install cassandra-driver
+
+c:\python\python.exe -c 'import cassandra; print (cassandra.__version__)'
